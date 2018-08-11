@@ -35,12 +35,12 @@ favicon:
   #ms_browserconfig: /images/browserconfig.xml
 
 # Set default keywords (Use a comma to separate)
-keywords: "Hexo, NexT"
+keywords: "区块链, 人工智能, 编程, 系统架构, 随手记录"
 
 # Set rss to false to disable feed link.
 # Leave rss as empty to use site's feed link.
 # Set rss to specific value if you have burned your feed already.
-rss:
+rss: /rss.xml
 
 footer:
   # Specify the date when the site was setup.
@@ -93,13 +93,13 @@ index_with_subtitle: true
 # Value after `||` delimeter is the name of FontAwesome icon. If icon (with or without delimeter) is not specified, question icon will be loaded.
 menu:
   home: / || home
-  #about: /about/ || user
-  #tags: /tags/ || tags
-  #categories: /categories/ || th
+  about: /about/ || user
+  tags: /tags/ || tags
+  categories: /categories/ || th
   archives: /archives/ || archive
   #schedule: /schedule/ || calendar
   #sitemap: /sitemap.xml || sitemap
-  commonweal: /404/ || heartbeat
+  commonweal: /404.html || heartbeat
 
 # Enable/Disable menu icons.
 menu_icons:
@@ -185,7 +185,7 @@ sidebar:
   #  - always  expand for all pages automatically
   #  - hide    expand only when click on the sidebar toggle icon.
   #  - remove  Totally remove sidebar including sidebar toggle.
-  display: post
+  display: always
   #display: always
   #display: hide
   #display: remove
@@ -197,7 +197,7 @@ sidebar:
   b2t: false
 
   # Scroll percent label in b2t button.
-  scrollpercent: false
+  scrollpercent: true
 
   # Enable sidebar on narrow view (only for Muse | Mist).
   onmobile: false
@@ -356,7 +356,7 @@ han: false
 #swiftype_key:
 
 # Baidu Analytics ID
-baidu_analytics: 1c001b7a1c1895f3a75f8bf9dc2c63f1
+baidu_analytics: 1baf4f0a9aefb25c568bdbb3bc53cfcf
 
 # Duoshuo ShortName
 #duoshuo_shortname:
@@ -648,6 +648,10 @@ tabs:
     tabs: false
     labels: true
   border_radius: 0
+
+# 文章末尾添加“本文结束”标记
+passage_end_tag:
+  enabled: true
 
 
 #! ---------------------------------------------------------------
