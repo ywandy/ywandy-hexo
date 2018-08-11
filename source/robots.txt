@@ -1,0 +1,14 @@
+User-agent: *
+Allow: /
+Allow: /archives/
+Allow: /categories/
+Allow: /tags/ 
+Disallow: /vendors/
+Disallow: /js/
+Disallow: /css/
+Disallow: /fonts/
+Disallow: /vendors/
+Disallow: /fancybox/
+
+Sitemap: https://yeweiandy.coding.me/sitemap.xml
+Sitemap: https://yeweiandy.coding.me/baidusitemap.xml
