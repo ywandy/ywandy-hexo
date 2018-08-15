@@ -10,6 +10,39 @@
   {% include '_partials/head.swig' %}
   <title>{% block title %}{% endblock %}</title>
   {% include '_third-party/analytics/index.swig' %}
+  <!-- 页面点击小红心 -->
+<script type="text/javascript" src="/js/src/love.js"></script>
+<script>
+    normal_title = document.title;
+    var timer;
+    var flag = false;
+    var timer1;
+    document.addEventListener('visibilitychange', function () {
+      if (document.visibilityState == 'hidden') {
+        timer = setInterval(()=>{
+          flag = !flag;
+          if(flag){
+            document.title = '\\(•ิ_•ิ\\)网页崩溃啦~~';
+          }else{
+            document.title = ' (/•ิ_•ิ)/网页崩溃啦~~';
+          }
+        },500)
+      } else{
+        clearInterval(timer);
+        
+        timer1 = setTimeout(()=>{
+          document.title = normal_title;
+        },2000);
+        document.title = "(◐ o ◑ )我回来了~~";
+      } 
+},false);
+</script>
+{% if theme.fireworks %}
+   <canvas class="fireworks" style="position: fixed;left: 0;top: 0;z-index: 1; pointer-events: none;" ></canvas> 
+   <script type="text/javascript" src="//cdn.bootcss.com/animejs/2.2.0/anime.min.js"></script> 
+   <script type="text/javascript" src="/js/src/fireworks.js"></script>
+{% endif %}
+
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="{{ page.lang || page.language || config.language }}">

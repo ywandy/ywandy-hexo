@@ -131,20 +131,28 @@ use_motion: true
 # Value after `||` delimeter is the name of FontAwesome icon. If icon (with or without delimeter) is not specified, globe icon will be loaded.
 social:
   GitHub: https://github.com/ywandy || github
-  E-Mail: mailto:yewei_andy@datainsights.biz || envelope
-  #Google: https://plus.google.com/yourname || google
-  #Twitter: https://twitter.com/yourname || twitter
-  #FB Page: https://www.facebook.com/yourname || facebook
-  #VK Group: https://vk.com/yourname || vk
-  #StackOverflow: https://stackoverflow.com/yourname || stack-overflow
-  #YouTube: https://youtube.com/yourname || youtube
-  #Instagram: https://instagram.com/yourname || instagram
-  #Skype: skype:yourname?call|chat || skype
+  E-Mail: mailto:yewei_andy@datainsights.biz || envelope-open
+  E-Mail2: mailto:896882701yw@gmail.com || envelope-open
+  简书: https://www.jianshu.com/u/fef8e1839c32 || edit
+  Google: https://plus.google.com/u/0/116752729275853539733 || google
+  Steam: https://steamcommunity.com/id/yewei_andy/ || steam-square
+  # Twitter: https://twitter.com/ywandy || twitter-square
+  # FB Page: https://www.facebook.com/yourname || facebook
+  # VK Group: https://vk.com/yourname || vk
+  # StackOverflow: https://stackoverflow.com/yourname || stack-overflow
+  # YouTube: https://youtube.com/yourname || youtube
+  # Instagram: https://instagram.com/yourname || instagram
+  # #Skype: skype:yourname?call|chat || skype
 
 social_icons:
   enable: true
   icons_only: false
   transition: false
+  github: github-square
+  E-Mail: envelope-open
+  E-Mail2: envelope-open
+  简书: edit
+  Steam: steam-square
 
 # Blog rolls
 links_icon: link
@@ -157,7 +165,7 @@ links_layout: block
 # Sidebar Avatar
 # in theme directory(source/images): /images/avatar.gif
 # in site  directory(source/uploads): /uploads/avatar.gif
-#avatar: /images/avatar.gif
+avatar: http://owm7tyxac.bkt.clouddn.com/yeweiblog.png
 
 # Table Of Contents in the Sidebar
 toc:
@@ -364,7 +372,7 @@ baidu_analytics: 1baf4f0a9aefb25c568bdbb3bc53cfcf
 # Disqus
 disqus:
   enable: false
-  shortname:
+  shortname: yeweiandy-blog
   count: true
 
 # Hypercomments
@@ -381,15 +389,15 @@ changyan:
 # You can get your appid and appkey from https://leancloud.cn
 # more info please open https://valine.js.org
 valine:
-  enable: false
-  appid:  # your leancloud application appid
-  appkey:  # your leancloud application appkey
+  enable: true
+  appid: DsTBh1V95fAsUKW53XfYPNiE-gzGzoHsz
+  appkey: kAvhl1PG0sMniqivygxwGevs
   notify: false # mail notifier , https://github.com/xCss/Valine/wiki
   verify: false # Verification code
-  placeholder: Just go go # comment box placeholder
+  placeholder: 请多多指教 # comment box placeholder
   avatar: mm # gravatar style
   guest_info: nick,mail,link # custom comment header
-  pageSize: 10 # pagination size
+  pageSize: 15 # pagination size
 
 
 # Support for youyan comments system.
@@ -468,7 +476,7 @@ needmoreshare2:
 #google_site_verification:
 
 # Google Analytics
-#google_analytics:
+google_analytics: UA-67135797-2
 
 # Bing Webmaster tools verification setting
 # See: https://www.bing.com/webmaster/
@@ -607,7 +615,7 @@ algolia_search:
 # Local search
 # Dependencies: https://github.com/flashlab/hexo-generator-search
 local_search:
-  enable: false
+  enable: true
   # if auto, trigger search by changing input
   # if manual, trigger search by pressing enter key or search button
   trigger: auto
@@ -815,7 +823,8 @@ baidu_site_verification: true
 
 #google verify
 google_site_verification: true
-
+#爆炸效果
+fireworks: true
 # Assets
 css: css
 js: js
