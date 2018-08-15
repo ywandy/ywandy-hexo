@@ -3,7 +3,7 @@ Custom head.
 #}
 
 {% if theme.baidu_site_verification %}
-  <meta name="baidu-site-verification" content="SkTcQ71j4l" />
+  <meta name="baidu-site-verification" content="9utNp1Ejpg" />
 {% endif %}
 
 {% if theme.google_site_verification %}
