@@ -10,5 +10,5 @@ Disallow: /fonts/
 Disallow: /vendors/
 Disallow: /fancybox/
 
-Sitemap: https://yeweiandy.coding.me/sitemap.xml
-Sitemap: https://yeweiandy.coding.me/baidusitemap.xml
+Sitemap: https://blog.ywandy.top/sitemap.xml
+Sitemap: https://blog.ywandy.top/baidusitemap.xml
